@@ -1,0 +1,12 @@
+.TopBar {
+    background-color: black;
+    border-bottom: 10px solid red;
+}
+
+.MainViewport {
+    background-color: rgb(80, 80, 80);
+}
+
+.TopBarTitle {
+    color: white;
+}
