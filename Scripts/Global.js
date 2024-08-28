@@ -8,7 +8,8 @@ Theme
     
     const GlobalTheme = document.getElementById("GlobalTheme")
 
-    ThemeChangeButton.onmousedown = () => {
+    ThemeChangeButton.onclick = () => {
+        console.log("Clicked Theme Button")
         ThemeChangeButton.value = "You clicked me :D!"
         setTimeout(() => {
             ThemeChangeButton.value = "Change Theme"
