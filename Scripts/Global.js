@@ -9,9 +9,9 @@ Theme
     const GlobalTheme = document.getElementById("GlobalTheme")
 
     ThemeChangeButton.onmousedown = () => {
-        ThemeChangeButton.innerText = "You clicked me :D!"
+        ThemeChangeButton.value = "You clicked me :D!"
         setTimeout(() => {
-            ThemeChangeButton.title = "Change Theme"
+            ThemeChangeButton.value = "Change Theme"
         }, 3000);
     }
 }
