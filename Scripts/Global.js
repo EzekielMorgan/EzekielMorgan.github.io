@@ -4,7 +4,10 @@ Theme
 () => {
     const ThemeChangeButton = document.getElementById("ThemeButton")
 
-    if (!ThemeChangeButton) return console.error("Page is missing a \"Theme\" button")
+    if (!ThemeChangeButton) {
+        return console.error("Page is missing a \"Theme\" button")
+    }
+    console.log("Theme Button Exists")
     
     const GlobalTheme = document.getElementById("GlobalTheme")
 
