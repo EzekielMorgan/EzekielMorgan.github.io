@@ -30,6 +30,7 @@
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: top;
+    object-fit: contain;
 }
 
 a {
