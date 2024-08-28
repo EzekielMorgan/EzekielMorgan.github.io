@@ -6,3 +6,8 @@ body {
 header {
     color: white;
 }
+
+#footer {
+    background-color: #505050;
+    color: #909090;
+}
