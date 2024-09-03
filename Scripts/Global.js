@@ -2,7 +2,7 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.1.32";
+const VERSION = "0.1.33";
 
 /*
 Theme
