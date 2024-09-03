@@ -2,12 +2,12 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.1.26";
+const VERSION = "0.1.27";
 
 /*
 Theme
 */
-(() => {
+try {
     console.log("Theme Button")
     const ThemeChangeButton = document.getElementById("ThemeButton")
 
@@ -25,12 +25,14 @@ Theme
             ThemeChangeButton.value = "Change Theme"
         }, 3000);
     }
-})()
+} catch {
+
+};
 
 /*
 Footer
 */
-(() => {
+try {
     console.log("Searching for footer")
     const footer = document.getElementById("footer")
     if (!footer) {
@@ -39,4 +41,6 @@ Footer
     console.log("Footer found")
 
     footer.innerText = VERSION
-})()
+} catch {
+
+};
