@@ -9,5 +9,6 @@ body {
     position: absolute;
     width: 100%;
     border-top-style: solid;
-    height: auto+25px;
+    height: auto;
+    min-height: 25px;
 }
