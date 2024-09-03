@@ -2,12 +2,13 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.1.23"
+const VERSION = "0.1.24"
 
 /*
 Theme
 */
 (() => {
+    console.log("Theme Button")
     const ThemeChangeButton = document.getElementById("ThemeButton")
 
     if (!ThemeChangeButton) {
@@ -30,6 +31,7 @@ Theme
 Footer
 */
 (() => {
+    console.log("Searching for footer")
     const footer = document.getElementById("footer")
     if (!footer) {
         return console.error("Page is missing the \"footer\"")
