@@ -2,7 +2,7 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.1.22"
+const VERSION = "0.1.23"
 
 /*
 Theme
@@ -26,6 +26,9 @@ Theme
     }
 })()
 
+/*
+Footer
+*/
 (() => {
     const footer = document.getElementById("footer")
     if (!footer) {
@@ -34,4 +37,4 @@ Theme
     console.log("Footer found")
 
     footer.innerText = VERSION
-})
+})()
