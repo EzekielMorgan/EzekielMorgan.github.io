@@ -2,7 +2,7 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.1.27";
+const VERSION = "0.1.28";
 
 /*
 Theme
@@ -12,7 +12,7 @@ try {
     const ThemeChangeButton = document.getElementById("ThemeButton")
 
     if (!ThemeChangeButton) {
-        return console.error("Page is missing a \"Theme\" button")
+        throw new Error("Page is missing a \"Theme\" button")
     }
     console.log("Theme Button Exists")
     
@@ -36,7 +36,7 @@ try {
     console.log("Searching for footer")
     const footer = document.getElementById("footer")
     if (!footer) {
-        return console.error("Page is missing the \"footer\"")
+        throw new Error("Page is missing the \"footer\"")
     }
     console.log("Footer found")
 
