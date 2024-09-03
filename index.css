@@ -8,6 +8,6 @@ body {
     left: 0px;
     position: absolute;
     width: 100%;
-    height: 25px;
     border-top-style: solid;
+    height: auto+25px;
 }
