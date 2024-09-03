@@ -2,7 +2,7 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.1.28";
+const VERSION = "0.1.29";
 
 /*
 Theme
@@ -40,7 +40,7 @@ try {
     }
     console.log("Footer found")
 
-    footer.innerText = VERSION
+    footer.innerText = `Version: ${VERSION} | Developed by Ezekiel Morgan`
 } catch {
 
 };
