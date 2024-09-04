@@ -2,7 +2,7 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.1.41";
+const VERSION = "0.1.42";
 
 /*
 DEBOUNCE VARS
@@ -54,7 +54,7 @@ const UpdateFooter = async () => {
 Init
 */
 
-document.onload = () => {
+document.addEventListener("DOMContentLoaded", () => {
     BindThemeButton().then(() => {
         console.log("ThemeButton Bound")
     }).catch(console.error)
@@ -62,4 +62,4 @@ document.onload = () => {
     UpdateFooter().then(() => {
         console.log("Footer Updated")
     }).catch(console.error)
-}
+})
