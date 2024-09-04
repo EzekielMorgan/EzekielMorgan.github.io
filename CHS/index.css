@@ -25,10 +25,10 @@
 .TopBarTitle {
     height: 75px;
     width: auto;
-    position: relative;
+    position: fixed;
     top: 0px;
     margin-top: 0px;
-    left: 5px;
+    left: 85px;
     z-index: inherit;
     font-size: 70px;
     font-weight: bold;

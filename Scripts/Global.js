@@ -2,20 +2,29 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.1.39";
+const VERSION = "0.1.40";
+
+/*
+DEBOUNCE VARS
+*/
+
+let Debounces = {
+    ThemeButtonBound: false
+}
 
 /*
 Theme
 */
-try {
-    console.log("Theme Button")
+const BindThemeButton = async () => {
+    if (Debounces.ThemeButtonBound) {
+        throw new Error("Attemped to bind already bound ThemeButton")
+    }
     const ThemeChangeButton = document.getElementById("ThemeButton")
 
     if (!ThemeChangeButton) {
         throw new Error("Page is missing a \"Theme\" button")
     }
-    console.log("Theme Button Exists")
-    
+
     const GlobalTheme = document.getElementById("GlobalTheme")
 
     ThemeChangeButton.onclick = () => {
@@ -25,22 +34,29 @@ try {
             ThemeChangeButton.value = "Change Theme"
         }, 3000);
     }
-} catch (err) {
-
-};
+    Debounces.ThemeButtonBound = true
+}
 
 /*
 Footer
 */
-try {
-    console.log("Searching for footer")
+const UpdateFooter = async () => {
     const footer = document.getElementById("footer")
     if (!footer) {
         throw new Error("Page is missing the \"footer\"")
     }
-    console.log("Footer found")
 
     footer.innerText = `Version: ${VERSION} | Developed by Ezekiel Morgan`
-} catch (err) {
+}
 
-};
+
+/*
+Init
+*/
+BindThemeButton().then(() => {
+    console.log("ThemeButton Bound")
+}).catch(console.error)
+
+UpdateFooter().then(() => {
+    console.log("Footer Updated")
+}).catch(console.error)
