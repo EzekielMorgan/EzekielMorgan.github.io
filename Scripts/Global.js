@@ -2,7 +2,7 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.1.37";
+const VERSION = "0.1.38";
 
 /*
 Theme
@@ -25,7 +25,7 @@ try {
             ThemeChangeButton.value = "Change Theme"
         }, 3000);
     }
-} catch {
+} catch (err) {
 
 };
 
@@ -41,6 +41,6 @@ try {
     console.log("Footer found")
 
     footer.innerText = `Version: ${VERSION} | Developed by Ezekiel Morgan`
-} catch {
+} catch (err) {
 
 };
