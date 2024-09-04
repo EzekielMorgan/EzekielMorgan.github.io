@@ -53,10 +53,13 @@ const UpdateFooter = async () => {
 /*
 Init
 */
-BindThemeButton().then(() => {
-    console.log("ThemeButton Bound")
-}).catch(console.error)
 
-UpdateFooter().then(() => {
-    console.log("Footer Updated")
-}).catch(console.error)
+document.onload = () => {
+    BindThemeButton().then(() => {
+        console.log("ThemeButton Bound")
+    }).catch(console.error)
+    
+    UpdateFooter().then(() => {
+        console.log("Footer Updated")
+    }).catch(console.error)
+}
