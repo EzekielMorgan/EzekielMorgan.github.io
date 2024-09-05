@@ -83,16 +83,16 @@ const StartSONARPING = async () => {
         "img"
     )
     ImageElemet.id = "SONARPING"
-    ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px, display: none;"
+    ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
     ImageElemet.src = "https://ezekielmorgan.github.io/Images/Misc/SONAR%20PING.jpg"
     document.body.appendChild(ImageElemet)
     Debounces.SONARPING = true
 
     document.addEventListener("keypress", (a) => {
         if (a.code === "KeyS" & a.ctrlKey === true & a.altKey === true) {
-            ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px, display: content;"
+            ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: content;"
             setTimeout(() => {
-                ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px, display: none;"
+                ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
             }, 1000);
         }
     })
