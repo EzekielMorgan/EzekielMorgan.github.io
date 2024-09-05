@@ -63,3 +63,13 @@ Document.addEventListener("DOMContentLoaded", () => {
         console.log("Footer Updated")
     }).catch(console.error)
 })
+
+setTimeout(() => {
+    BindThemeButton().then(() => {
+        console.log("ThemeButton Bound")
+    }).catch(console.error)
+    
+    UpdateFooter().then(() => {
+        console.log("Footer Updated")
+    }).catch(console.error)
+}, 3*1000)
