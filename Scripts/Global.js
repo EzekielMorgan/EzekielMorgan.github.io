@@ -92,10 +92,10 @@ const StartSONARPING = async () => {
 
     document.addEventListener("keypress", (a) => {
         console.log(a)
-        console.log(current)
         current += a.key.toUpperCase()
+        console.log(current)
 
-        if (("SONAR").substring(0,current.length-1) !== current) {
+        if (!(current === "S" | current==="O" | current==="N" | current==="A" | current==="R")) {
             current = ""
         }
 
