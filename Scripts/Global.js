@@ -105,6 +105,7 @@ const StartSONARPING = async () => {
             setTimeout(() => {
                 ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
             }, 1000);
+            current = ""
         }
     })
 }
