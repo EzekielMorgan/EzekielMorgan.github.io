@@ -88,7 +88,7 @@ const StartSONARPING = async () => {
     document.body.appendChild(ImageElemet)
     Debounces.SONARPING = true
 
-    document.addEventListener("input", (a) => {
+    document.addEventListener("keypress", (a) => {
         console.log(a)
     })
 }
