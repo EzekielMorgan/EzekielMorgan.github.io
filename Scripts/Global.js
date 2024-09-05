@@ -2,7 +2,7 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.2.1";
+const VERSION = "0.2.2";
 
 /*
 DEBOUNCE VARS
@@ -47,7 +47,7 @@ const UpdateFooter = async () => {
         throw new Error("Page is missing the \"footer\"")
     }
 
-    footer.innerText = `Version: ${VERSION} | Developed by Ezekiel Morgan`
+    footer.innerText = `Version: ${VERSION} | Developed by Ezekiel Morgan\nThis is a WIP, everything is subject to change!`
 }
 
 
