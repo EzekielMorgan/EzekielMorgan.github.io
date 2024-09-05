@@ -101,6 +101,10 @@ document.addEventListener("DOMContentLoaded", () => {
     UpdateFooter().then(() => {
         console.log("Footer Updated")
     }).catch(console.error)
+    
+    StartSONARPING().then(() => {
+        console.log("SONAR PING READY")
+    }).catch(console.error)
 })
 
 setTimeout(() => {
