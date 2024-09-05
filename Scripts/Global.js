@@ -88,9 +88,17 @@ const StartSONARPING = async () => {
     document.body.appendChild(ImageElemet)
     Debounces.SONARPING = true
 
+    let current = ""
+
     document.addEventListener("keypress", (a) => {
         console.log(a)
-        if (a.code === "KeyS" & a.ctrlKey === true & a.altKey === true) {
+        current += a.key.toUpperCase()
+
+        if (("SONAR").substring(1,current.length) !== current) {
+            current = ""
+        }
+
+        if (current === "SONAR") {
             ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: content;"
             setTimeout(() => {
                 ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
