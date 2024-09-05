@@ -2,7 +2,7 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.1.45";
+const VERSION = "0.2.0";
 
 /*
 DEBOUNCE VARS
@@ -89,7 +89,12 @@ const StartSONARPING = async () => {
     Debounces.SONARPING = true
 
     document.addEventListener("keypress", (a) => {
-        console.log(a)
+        if (a.code === "KeyS" & a.ctrlKey === true & a.altKey === true) {
+            ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px, display: none"
+            setTimeout(() => {
+                ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px, display: none"
+            }, 1000);
+        }
     })
 }
 
