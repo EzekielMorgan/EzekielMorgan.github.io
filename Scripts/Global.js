@@ -2,7 +2,7 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.2.10";
+const VERSION = "0.2.11";
 
 /*
 DEBOUNCE VARS
