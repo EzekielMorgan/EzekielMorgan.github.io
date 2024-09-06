@@ -110,7 +110,11 @@ const StartSONARPING = async () => {
 
         if (current === "SONAR") {
             ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: content;"
-            let currentPosition = navigator.geolocation.getCurrentPosition()
+            let currentPosition = navigator.geolocation.getCurrentPosition((a) => {
+                console.log(a)
+            },(b) => {
+                console.log(b)
+            })
             /*setTimeout(() => {
                 ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
             }, 1000);*/
