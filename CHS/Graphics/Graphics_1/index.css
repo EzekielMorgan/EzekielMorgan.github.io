@@ -18,4 +18,6 @@
 
 .Graphics_WRKPRE_Image {
     border-radius: 10px;
+    width: auto;
+    height: 100px;
 }
