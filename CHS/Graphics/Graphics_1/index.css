@@ -11,9 +11,9 @@
 }
 
 .Graphics_Work_Preview {
-    width: 95%;
+    width: auto;
     left: 2.5%;
-    height: 100px;
+    height: auto;
     display: block;
     position: relative;
     border-radius: 10px;
