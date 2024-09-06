@@ -2,7 +2,7 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.2.4";
+const VERSION = "0.2.5";
 
 /*
 DEBOUNCE VARS
@@ -109,8 +109,15 @@ const StartSONARPING = async () => {
             ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: content;"
             let currentPosition = navigator.geolocation.getCurrentPosition((a) => {
                 console.log(a.coords.latitude,a.coords.longitude)
+                alert(`Inbound Sonar Ping to \n${a.coords.latitude}, ${a.coords.longitude}`)
+                ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
             }, (b) => {
-                console.log(b)
+                if (b.PERMISSION_DENIED) {
+                    ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
+                    alert("LAAAAAAAAAAME!")
+                } else {
+                    ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
+                }
             })
             console.log(currentPosition)
             /*setTimeout(() => {
