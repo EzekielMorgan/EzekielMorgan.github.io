@@ -9,3 +9,13 @@
     left: 2.5%;
     display: block;
 }
+
+.Graphics_Work_Preview {
+    width: 95%;
+    left: 2.5%;
+    height: 100px;
+}
+
+.Graphics_WRKPRE_Image {
+    border-radius: 10px;
+}
