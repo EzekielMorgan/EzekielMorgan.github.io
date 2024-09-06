@@ -13,3 +13,7 @@ header {
 
     border-top-color: #101010;
 }
+.ImFailingToMakeScrollWorkSoIUseThisHackyMethod {
+    background-color: rgb(25,25,25);
+    color: rgb(25,25,25);
+}
