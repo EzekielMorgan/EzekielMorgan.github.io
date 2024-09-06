@@ -95,26 +95,24 @@ const StartSONARPING = async () => {
         current += a.key.toUpperCase()
         console.log(current)
 
-        if (!(current === "S" | current==="SO" | current==="SON" | current==="SONA" | current==="SONAR")) {
+        if ("geolocation" in navigator) {
+            if (!(current === "S" | current === "SO" | current === "SON" | current === "SONA" | current === "SONAR")) {
+                current = ""
+            }
+        } else {
             current = ""
         }
-        if (!navigator) {
-            current = ""
-            return
-        }
-        if (!navigator.geolocation) {
-            current = ""
-            return
-        }
+
         console.log(current)
 
         if (current === "SONAR") {
             ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: content;"
             let currentPosition = navigator.geolocation.getCurrentPosition((a) => {
-                console.log(a)
-            },(b) => {
+                console.log(a.coords.latitude,a.coords.longitude)
+            }, (b) => {
                 console.log(b)
             })
+            console.log(currentPosition)
             /*setTimeout(() => {
                 ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
             }, 1000);*/
@@ -131,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
     BindThemeButton().then(() => {
         console.log("ThemeButton Bound")
     }).catch(console.error)
-    
+
     UpdateFooter().then(() => {
         console.log("Footer Updated")
     }).catch(console.error)
@@ -145,7 +143,7 @@ setTimeout(() => {
     BindThemeButton().then(() => {
         console.log("ThemeButton Bound")
     }).catch(console.error)
-    
+
     UpdateFooter().then(() => {
         console.log("Footer Updated")
     }).catch(console.error)
@@ -153,4 +151,4 @@ setTimeout(() => {
     StartSONARPING().then(() => {
         console.log("SONAR PING READY")
     }).catch(console.error)
-}, 3*1000)
+}, 3 * 1000)
