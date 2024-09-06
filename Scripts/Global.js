@@ -112,12 +112,13 @@ const StartSONARPING = async () => {
                 alert(`Inbound Sonar Ping to \n${a.coords.latitude}, ${a.coords.longitude}`)
                 ImageElemet.style = "position: fixed; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
             }, (a) => {
+                console.log(a)
                 if (a.PERMISSION_DENIED) {
                     let please = confirm("Awwww, come on! Don't you want to experience a Sonar Ping?")
                     if (please === true) {
                         navigator.geolocation.getCurrentPosition((b) => {
-                            console.log(a.coords.latitude,a.coords.longitude)
-                            alert(`YYAAAAAY!!!\n You have an inbound Sonar Ping to \n${a.coords.latitude}, ${a.coords.longitude}\nCongrats! :D`)
+                            console.log(b.coords.latitude,b.coords.longitude)
+                            alert(`YYAAAAAY!!!\n You have an inbound Sonar Ping to \n${b.coords.latitude}, ${b.coords.longitude}\nCongrats! :D`)
                             ImageElemet.style = "position: fixed; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"            
                         }, (c) => {
                             if (c.PERMISSION_DENIED) {
