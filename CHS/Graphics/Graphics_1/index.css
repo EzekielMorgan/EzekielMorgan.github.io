@@ -1,0 +1,9 @@
+#GraphicsSelectedWorkDisplay {
+    display: none;
+}
+
+#Graphics_Page_Seperator {
+    position: relative;
+    width: 90%;
+    height: 10px;
+}
