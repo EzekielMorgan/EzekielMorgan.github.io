@@ -6,7 +6,7 @@ body {
     border-top-width: 5px;
     bottom: 0px;
     left: 0px;
-    position: absolute;
+    position: fixed;
     width: 100%;
     border-top-style: solid;
     height: auto;

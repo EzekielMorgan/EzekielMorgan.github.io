@@ -25,7 +25,7 @@
 .TopBarTitle {
     height: 75px;
     width: auto;
-    position: fixed;
+    position: static;
     top: 0px;
     margin-top: 0px;
     left: 85px;
@@ -34,7 +34,7 @@
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     object-fit: contain;
-    display: block;
+    display: inline;
 }
 
 a {
