@@ -11,9 +11,9 @@
 }
 
 .Graphics_Work_Preview {
-    width: auto;
+    width: fit-content;
     left: 2.5%;
-    height: auto;
+    height: fit-content;
     display: block;
     position: relative;
     border-radius: 10px;
@@ -23,8 +23,8 @@
 
 .Graphics_WRKPRE_Image {
     border-radius: 10px;
-    width: auto;
-    height: 100px;
+    width: 100%;
+    height: fit-content;
 }
 a.Graphics_WRKPRE_Text {
     vertical-align: top;
