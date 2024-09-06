@@ -125,11 +125,11 @@ const StartSONARPING = async () => {
                             } else {
                                 alert("Unable to get your geolocation :(\nSorry, but we cannot send a Sonar Ping at this time.")
                             }
-                            ImageElemet.style = "position: fixed; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: content;"        
+                            ImageElemet.style = "position: fixed; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"        
                         })
                     } else {
                         alert("Coward.")
-                        ImageElemet.style = "position: fixed; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: content;"    
+                        ImageElemet.style = "position: fixed; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"    
                     }
                 } else {
                     alert("Unable to get your geolocation :(\nSorry, but we cannot send a Sonar Ping at this time.")
