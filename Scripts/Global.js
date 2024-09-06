@@ -2,7 +2,7 @@
 CONSTANT VARS
 */
 
-const VERSION = "0.2.3";
+const VERSION = "0.2.4";
 
 /*
 DEBOUNCE VARS
@@ -98,13 +98,22 @@ const StartSONARPING = async () => {
         if (!(current === "S" | current==="SO" | current==="SON" | current==="SONA" | current==="SONAR")) {
             current = ""
         }
+        if (!navigator) {
+            current = ""
+            return
+        }
+        if (!navigator.geolocation) {
+            current = ""
+            return
+        }
         console.log(current)
 
         if (current === "SONAR") {
             ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: content;"
-            setTimeout(() => {
+            let currentPosition = navigator.geolocation.getCurrentPosition()
+            /*setTimeout(() => {
                 ImageElemet.style = "position: absolute; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
-            }, 1000);
+            }, 1000);*/
             current = ""
         }
     })
