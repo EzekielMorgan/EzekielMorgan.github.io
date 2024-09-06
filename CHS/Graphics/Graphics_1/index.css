@@ -2,7 +2,7 @@
     display: none;
 }
 
-#Graphics_Page_Seperator {
+.Graphics_Page_Seperator {
     position: relative;
     width: 90%;
     height: 10px;
