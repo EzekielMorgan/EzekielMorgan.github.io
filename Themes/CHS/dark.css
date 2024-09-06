@@ -22,3 +22,7 @@ Graphics
 .Graphics_Page_Seperator {
     background-color: white;
 }
+
+.Graphics_Work_Preview {
+    border-color: red;
+}

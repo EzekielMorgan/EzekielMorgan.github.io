@@ -14,10 +14,17 @@
     width: 95%;
     left: 2.5%;
     height: 100px;
+    display: block;
+    border-radius: 10px;
+    border-width: 5px;
+    border-style: solid;
 }
 
 .Graphics_WRKPRE_Image {
     border-radius: 10px;
     width: auto;
     height: 100px;
+}
+a.Graphics_WRKPRE_Text {
+    vertical-align: top;
 }
