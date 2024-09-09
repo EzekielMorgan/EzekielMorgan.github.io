@@ -49,3 +49,13 @@ a {
     position: relative;
     display: block;
 }
+
+.BellSchedule {
+    width: auto;
+    height: auto;
+}
+
+.TimeIs {
+    width: 350px;
+    height: 200px;
+}
