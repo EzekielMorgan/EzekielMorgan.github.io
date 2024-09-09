@@ -52,7 +52,7 @@ a {
 
 .BellSchedule {
     width: auto;
-    height: auto;
+    height: fit-content;
 }
 
 .TimeIs {
