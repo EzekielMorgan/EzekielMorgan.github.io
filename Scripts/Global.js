@@ -116,22 +116,11 @@ const StartSONARPING = async () => {
                 if (a.PERMISSION_DENIED) {
                     let please = confirm("Awwww, come on! Don't you want to experience a Sonar Ping?")
                     if (please === true) {
-                        navigator.geolocation.getCurrentPosition((b) => {
-                            console.log(b.coords.latitude,b.coords.longitude)
-                            alert(`YYAAAAAY!!!\n You have an inbound Sonar Ping to \n${b.coords.latitude}, ${b.coords.longitude}\nCongrats! :D`)
-                            ImageElemet.style = "position: fixed; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"            
-                        }, (c) => {
-                            if (c.PERMISSION_DENIED) {
-                                alert("Coward.")
-                            } else {
-                                alert("Unable to get your geolocation :(\nSorry, but we cannot send a Sonar Ping at this time.")
-                            }
-                            ImageElemet.style = "position: fixed; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"        
-                        })
+                        alert("Ok, reset your permissions set for this site, refresh, retype \"sonar\", and press allow!")
                     } else {
                         alert("Coward.")
-                        ImageElemet.style = "position: fixed; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"    
                     }
+                    ImageElemet.style = "position: fixed; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
                 } else {
                     alert("Unable to get your geolocation :(\nSorry, but we cannot send a Sonar Ping at this time.")
                     ImageElemet.style = "position: fixed; width: 100%; height: 100%; z-index: 99999999; top: 0px; left: 0px; display: none;"
