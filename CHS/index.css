@@ -52,10 +52,15 @@ a {
 
 .BellSchedule {
     width: 400px;
-    height: 500px;
+    /*height: 500px;*/
+    aspect-ratio: 1.3;
 }
 
 .TimeIs {
     width: 350px;
     height: 200px;
+}
+
+.BellSchedule_TimeContainer {
+
 }
