@@ -51,8 +51,8 @@ a {
 }
 
 .BellSchedule {
-    width: 400px;
-    /*height: 500px;*/
+    /*width: 400px;*/
+    height: 500px;
     aspect-ratio: 1.3;
 }
 
