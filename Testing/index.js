@@ -24,10 +24,20 @@ class Database {
      * @param {string} Path
      * @param {null | [Type == "SET" ? any]} Value
      */
-    async #SendRequest(Type, Path, Value=null) {
-        fetch({
-            method: Type,
-            url: this.#url + Path
+    #SendRequest(Type, Path, Value=null) {
+        return new Promise((resolve, reject) => {
+            fetch({
+                method: Type,
+                url: this.#url + Path
+            }).then(response => {
+                if (response.ok) {
+                    resolve(response.json())
+                } else {
+                    reject(`Database request failed with status ${response.status}`)
+                }
+            }).catch(error => {
+                reject(`Database request failed with error: ${error}`)
+            })
         })
     }
 }
