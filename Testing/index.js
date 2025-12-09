@@ -3,8 +3,8 @@ class Database {
      * 
      * @param {string} URL 
      */
-    constructor(URL) {
-        this.#url = URL
+    constructor(DbURL) {
+        this.#url = DbURL
     }
 
     #url
