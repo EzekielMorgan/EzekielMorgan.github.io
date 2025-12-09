@@ -28,7 +28,8 @@ class Database {
         return new Promise((resolve, reject) => {
             fetch({
                 method: Type,
-                url: this.#url + Path
+                "host": this.#url,
+                "path": `/${Path}`,
             }).then(response => {
                 if (response.ok) {
                     resolve(response.json())
@@ -42,7 +43,7 @@ class Database {
     }
 }
 
-const TestDB = new Database("https://ezekielmorgan-github-io-default-rtdb.firebaseio.com/")
+const TestDB = new Database("https://ezekielmorgan-github-io-default-rtdb.firebaseio.com")
 
 window.addEventListener("load", async () => {
     const DatabaseTestElement = document.getElementById("DatabaseTest")
